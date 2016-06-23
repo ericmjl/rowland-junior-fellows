@@ -1,0 +1,68 @@
+\textbf{Introduction:} One goal of viral genomic surveillance is to use
+a virus' sequence to predict how virulent and pathogenic it may be.
+Unfortunately, \textbf{the biggest gap hampering this vision is a lack
+of viral protein sequence variants paired with systematically measured
+phenotype data}, on which computational models can be trained to learn
+the sequence-function mapping. As a Rowland Junior Fellow, I aim to (1)
+develop safe, scalable and standardized assays to systematically measure
+viral protein variants, and (2) integrate the data generation pipeline
+with new advances in machine learning to accurately and rapidly predict
+of viral risk profiles from sequence. My long-term goal is to build a
+dashboard that predicts, \emph{in silico}, viral risk from its component
+proteins' sequence, without requiring any experimentation on whole live
+viruses.
+
+\textbf{(1) Viral phenotyping:} Health risk due to viral infection is
+partially determined by host response, and partially determined by a
+virus' component biochemical properties, which are in turn determined by
+its component proteins. In order to address the missing link of virus
+phenotype data, \textbf{we will systematically characterize virus
+protein variants for their \emph{in vitro} biochemical properties.}
+
+We will start by characterizing the influenza polymerase complex
+variants' replication rate, and neuraminidase variants' drug resistance.
+We will use DNA synthesis and assembly methods to synthesize protein
+variants, and use robotics to scale our variant library generation and
+measurement steps. We will also build new assays for systematically
+measuring other influenza viral proteins' biochemistry, for example, by
+leveraging our genetic systems to rapidly test other emerging pathogens.
+Our long-term goal here is to develop a plug-and-play experimental
+system for biochemically testing any new virus' proteins and its
+variants within days of sequencing, for which the generated data could
+help guide clinical treatment and epidemiological interventions. A
+``stretch goal'' would be determining the minimum number of assays
+required to reliably predict a virus' risk profile.
+
+\textbf{(2) Computational prediction:} The viral phenotyping data
+generated constitute a gold standard, densely measured dataset with
+paired sequence and measurements. This data can be leveraged for
+predicting viral protein activity from sequence. This problem can
+essentially be cast as learning a non-linear mapping from genotype space
+to phenotype space. \textbf{We will use supervised learning algorithms
+to learn the mapping from genotype space to phenotype space, while also
+partnering with current collaborators to develop new learning algorithms
+for this task.}
+
+With our experimental pipeline, data, and models, I aim to build an
+integrated ``viral forecasting'' system capable of being updated with
+new experimental data. Such a system may enable epidemiologists to
+monitor and forecast which aspects of a virus' risk are increasing
+(e.g.~vaccine suscepitibility vs.~drug susceptibility), and hence tailor
+outbreak responses most effectively. It may also help guide clinical
+decision making, such as recommending drug combinations that a patient's
+virus population would be most sensitive to. With a fast experimental
+pipeline infrastructure, our machine learning models could be refined in
+real-time as new viral protein variants are continually tested.
+
+\textbf{Funding Avenues:} In pursuit of these goals, I have written two
+Broad\emph{Next10} grant applications, one of which was co-written with
+colleagues at the Broad Institute, to develop such standardized, safe
+and scalable assays for the influenza polymerase and neuraminidase.
+\textbf{Both our grants were awarded, totalling \$80,000 in funds.}
+Additionally, my current advisor and I are collaborating with the
+Harvard Intelligent and Probabilistic Systems group on an NIH R21 grant
+to fund these efforts further. Other planned funding sources include
+DARPA's Prophecy program, philanthropic groups (Gates and Simons
+foundations), and the NIH/NIAID. We will also explore data
+access/licensing models with interested industry partners to enable our
+research and engineering efforts to be self-sustaining.
