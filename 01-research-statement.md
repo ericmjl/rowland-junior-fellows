@@ -1,6 +1,8 @@
 ---
-author: Eric J. Ma (MIT)
-title: Systematic Measurements for Genotype-Phenotype Mapping
+author:
+- name: Eric J. Ma
+  affiliation: MIT
+title: Prediction of influenza virus risk by systematic genotype-phenotype mapping
 ---
 
 <!--
