@@ -12,8 +12,6 @@ Bill's comments on section 1:
 1. It's still a bit high level.
 3. "dashboard" - might be a better word. Sounds a bit colloquial.
 4. Rowland fellows - I might be writing with too much jargon here, as they are a diverse group of people, not necessarily life scientists.
-5. "Plug-and-play" - sounds a bit colloquial. >>> done - removed from text.
-6. Do not leave reader with impression that I'm only going to be looking at two proteins for all viruses. >>> done.
 -->
 
 ***Aim 1: Scalable viral phenotyping.*** Health risk due to influenza virus infection is partially determined by host response, and partially determined by the virus' biochemical properties, which are in turn determined by its component proteins. In order to address the missing link of paired virus sequence-phenotype data, **we will systematically characterize influenza virus protein variants for their *in vitro* biochemical properties.**
@@ -22,8 +20,6 @@ We will start by systematically characterizing the phenotype of two influenza pr
 
 <!--
 Bill's comments on section 2:
-1. "viral forecasting system" - a bit misleading. >>> done
-3. Might be good to put in an example? >>> done!
 4. Put in some referenceable pointers for the reader, to help the reader connect back.
  -->
 
