@@ -10,40 +10,25 @@ title: Predicting influenza virus risk by systematic genotype-phenotype mapping
 <!--
 Bill's comments on section 1:
 1. It's still a bit high level.
-2. "neuraminidase variants' drug resistance" - not so clear. >>> done
 3. "dashboard" - might be a better word. Sounds a bit colloquial.
 4. Rowland fellows - I might be writing with too much jargon here, as they are a diverse group of people, not necessarily life scientists.
-5. "Plug-and-play" - sounds a bit colloquial.
-6. Do not leave reader with impression that I'm only going to be looking at two proteins for all viruses.
-7.
+5. "Plug-and-play" - sounds a bit colloquial. >>> done - removed from text.
+6. Do not leave reader with impression that I'm only going to be looking at two proteins for all viruses. >>> done.
 -->
-
-<!--EM: I took out the figure. It isn't accurate for what I'm trying to communicate. Still thinking...-->
-
-<!-- Try adding some content that hints at "flu being the starting system" -->
 
 ***Aim 1: Scalable viral phenotyping.*** Health risk due to influenza virus infection is partially determined by host response, and partially determined by the virus' biochemical properties, which are in turn determined by its component proteins. In order to address the missing link of paired virus sequence-phenotype data, **we will systematically characterize influenza virus protein variants for their *in vitro* biochemical properties.**
 
-We will start by systematically characterizing the phenotype of two influenza proteins: RNA replication rate of the polymerase complex, and drug resistance of the neuraminidase protein. We will use DNA synthesis and assembly methods to generate protein variants, and use robotics to scale our variant library generation and measurement steps. We will then standardize established assays for measuring neuraminidase and polymerase activity, by using a standard reference control across all measurements. The data generated will be a gold-standard, dense measurement of influenza viral properties.
-
-We will also build new assays for systematically measuring other influenza viral proteins' biochemistry, for example, by leveraging our genetic systems to rapidly test other emerging pathogens. Our long-term goal here is to develop an expandable and generalizable experimental system for biochemically testing any new virus' proteins and its variants within days of sequencing, for which the generated biochemical data could help guide clinical treatment and epidemiological interventions.
+We will start by systematically characterizing the phenotype of two influenza proteins: RNA replication rate of the polymerase complex, and drug resistance of the neuraminidase protein. We will use DNA synthesis and assembly methods to generate protein variants, and use robotics to scale our variant library generation and measurement steps. We will then scale established assays for measuring neuraminidase and polymerase activity in a 96-well microplate format, and standardize the measurements by using a standard reference control. The data generated will be a gold-standard, dense measurement of influenza viral properties, and will be released under a permissive public license. We will also build new assays for systematically measuring other influenza viral proteins' biochemical phenotypes, and leveraging our genetic systems to rapidly test other emerging pathogens. Our long-term goal here is to develop a generalizable experimental system for biochemically testing any new virus' proteins and its variants.
 
 <!--
 Bill's comments on section 2:
-1. "viral forecasting system" - a bit misleading.
-2. pointers on allostery, folding - these are important, but right now not yet mentioned. these could be added to the first paragraph.
-3. Might be good to put in an example?
+1. "viral forecasting system" - a bit misleading. >>> done
+3. Might be good to put in an example? >>> done!
 4. Put in some referenceable pointers for the reader, to help the reader connect back.
  -->
 
+***Aim 2: Computational prediction.*** The data from Aim 1 can be leveraged for predicting viral protein activity from sequence. This problem can essentially be cast as learning a non-linear mapping from genotype space to phenotype space. **We will use established supervised learning algorithms to learn this mapping, while also partnering with current collaborators to develop new learning algorithms optimized for this task.** The models will be constructed using free and open source software (`autograd` and `scikit-learn`). The models will be integrated into a web-based viral phenotype prediction system, in which end users may input a viral protein sequence and have the predicted relevant phenotypes returned.
 
-***Aim 2: Computational prediction.*** The data from Aim 1 can be leveraged for predicting viral protein activity from sequence. This problem can essentially be cast as learning a non-linear mapping from genotype space to phenotype space.<!--JR: What is the possible/probable noise that interferes? How can it be avoided, or what else might need to be considered? Alternatives? --><!--EM: Not sure what you mean by this? --> **We will use established supervised learning algorithms to learn this mapping, while also partnering with current collaborators to develop new learning algorithms optimized for this task.**
+With our data generation and computational prediction pipelines, we will build an integrated and continually updated computational viral characterization system. Such a system may enable epidemiologists to monitor and predict which aspects of a virus' phenotype are trending towards danger (e.g. circulating strains are increasing in drug resistance but not antigenic distance to current vaccine strain), and hence tailor outbreak responses most effectively (e.g. deploying vaccines instead of drugs). It may also help guide clinical decision making, such as recommending drug combinations that a patient's virus population would be most sensitive to. With a rapid experimental pipeline, our machine learning models can also be refined in real-time as new viral protein variants are discovered and tested.
 
-With our experimental pipeline, data, and models, I aim to build an integrated and continually updated “viral forecasting” system. This system would be backed by sequence and biochemical data, powered by machine learning, and deliver insights into viral pathogenesis. As a long-term extension of this work, such a system may enable epidemiologists to monitor and forecast which aspects of a virus' risk are trending towards danger (e.g. vaccine vs. drug susceptibility), and hence tailor outbreak responses most effectively (e.g. deploying vaccines vs. drugs). It may also help guide clinical decision making, such as recommending drug combinations that a patient's virus population would be most sensitive to. With a rapid experimental pipeline, our machine learning models could be refined in real-time as new viral protein variants are discovered and tested.
-
-<!--
-Bill's comments on planned funding avenues:
-1. How will being an RJF help with advancing the science? May want to emphasize this instead of the "Funding Avenues" portion.
- -->
-
-**Funding Avenues:** In pursuit of these goals, I have written two Broad*Next10* grant applications, one of which was co-written with colleagues at the Broad Institute, to <!-- Can we highlight this? -->pilot the development of such standardized, safe and scalable assays for the influenza polymerase and neuraminidase. **Both grants were awarded, totaling \$80,000 in funds.** Together with my current advisor, we are also collaborating with the Harvard Intelligent and Probabilistic Systems group on an NIH R21 grant to fund these efforts further. Other planned funding sources include DARPA’s Prophecy program, philanthropic groups (Gates and Simons foundations), and the NIH/NIAID. We may also explore data access/licensing models with interested industry partners to enable our research and engineering efforts to be self-sustaining.
+***Fellowship Support and Funding:*** The Rowland Institute can provide the necessary environment and support for this project. For example, I can foresee leveraging the machine shop to help design parts for custom robotics that may be required. The multidisciplinary nature of this project will likewise benefit from the varied subject areas represented at the Rowland Institute. In pursuit of the research goals described above, I have also co-written and won Broad *Next10* grant applications totaling $80,000, and have led the submission of an NIH R21 grant with my current advisor Jonathan Runstadler and collaborator David Duvenaud. Research funding provided by the Rowland Institute will also help me establish this research program, while we source funds from additional sources (e.g. DARPA, Gates Foundation). In order to ensure that our research and engineering efforts are self-sustaining, we will also explore data access & licensing models with interested industry partners.
