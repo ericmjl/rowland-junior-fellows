@@ -9,8 +9,8 @@ title: Predicting influenza virus risk by systematic genotype-phenotype mapping
 
 <!--
 Bill's comments on section 1:
-1. It's still a bit high level.
-3. "dashboard" - might be a better word. Sounds a bit colloquial.
+1. It's still a bit high level. >>> added more detail.
+3. "dashboard" - might be a better word. Sounds a bit colloquial. >>> removed.
 4. Rowland fellows - I might be writing with too much jargon here, as they are a diverse group of people, not necessarily life scientists.
 -->
 
