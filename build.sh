@@ -10,5 +10,5 @@ pandoc 02-cv.md \
   --latex-engine="xelatex"  \
   --template="default.latex"
 
-open "01-research-statement.pdf"
-open "02-cv.pdf"
+# open "01-research-statement.pdf"
+# open "02-cv.pdf"
