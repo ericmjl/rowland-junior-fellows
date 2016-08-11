@@ -2,7 +2,7 @@
 author:
 - name: Eric J. Ma
   affiliation: MIT
-title: Phenotypic interpretation of influenza virus risk by systematic measurements.
+title: Phenotypic interpretation of viral risk by systematic measurements.
 # title: Systematic measurement platform for phenotypic interpretation of influenza risk.
 ---
 
